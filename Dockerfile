@@ -24,23 +24,4 @@ MAINTAINER Torchbox Sysadmin <sysadmin@torchbox.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get install -y \
-        git \
-        libfreetype6-dev \
-        libjpeg62-turbo-dev \
-        libmcrypt-dev \
-        libpng12-dev \
-        libssl-dev \
-        libmemcached-dev \
-        libz-dev \
-        libmysqlclient18 \
-        zlib1g-dev \
-        libsqlite3-dev \
-        zip \
-        libxml2-dev \
-        libcurl3-dev \
-        libedit-dev \
-        libpspell-dev \
-        libldap2-dev \
-        unixodbc-dev \
-        libpq-dev
+RUN apt-get update
