@@ -22,7 +22,7 @@ phases:
   build:
     commands:
       - docker build --tag $REPOSITORY_URI:$TAG .
-      - ./scannercli scan --policies Default --host $AQUA_URL --user $AQUA_USER --password $AQUA_PASSWORD --local $REPOSITORY_URI:$TAG --no-verify --htmlfile out.html
+      - ./scannercli scan --register --host $AQUA_URL --user $AQUA_USER --password $AQUA_PASSWORD --local $REPOSITORY_URI:$TAG --no-verify --htmlfile out.html
       - docker push $REPOSITORY_URI:$TAG
 
   post_build:
