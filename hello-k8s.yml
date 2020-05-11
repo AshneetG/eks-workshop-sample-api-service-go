@@ -33,9 +33,9 @@ spec:
         - name: hello-k8s
           image: CONTAINER_IMAGE
           securityContext:
-            privileged: true
+            privileged: false
             readOnlyRootFilesystem: true
-            allowPrivilegeEscalation: true
+            allowPrivilegeEscalation: false
           ports:
             - containerPort: 8080
 
