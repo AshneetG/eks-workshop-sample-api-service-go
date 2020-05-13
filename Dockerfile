@@ -17,7 +17,6 @@ USER app
 EXPOSE 8080
 CMD ["/main"]
 
-
 #FROM php:5.6-fpm
 #MAINTAINER Torchbox Sysadmin <sysadmin@torchbox.com>
 #ENV DEBIAN_FRONTEND noninteractive
